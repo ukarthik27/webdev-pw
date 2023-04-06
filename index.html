@@ -67,10 +67,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
-    
+    <title>Karthik | Friendly neighbourhood webhead</title>
+<!--     
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
+    <meta name="author" content="Bartek Szopka" /> -->
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
@@ -92,7 +92,7 @@
     <link href="css/impress-demo.css" rel="stylesheet" />
     <link href="css/impress-common.css" rel="stylesheet" />
     
-    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="shortcut icon" href="hubble.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
@@ -163,7 +163,7 @@
     data-max-scale="3"
     data-min-scale="0"
     data-perspective="1000"
-    data-autoplay="7"
+    data-autoplay="60"
     
     >
 
@@ -187,7 +187,7 @@
         Plugins: For first slide, set the autoplay time to a custom 10 seconds.
         
     -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="10">
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500"     data-autoplay="60">
         <q>Greetings !! Are you Looking for 
             <p>Frontend Engineer ?<p>
             <p>Backend Engineer ??<p>
@@ -212,7 +212,7 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-    <div class="step slide" data-x="0" data-y="-1500">
+    <div class="step slide" data-x="0" data-y="-1500" data-autoplay="60">
         <q>Then you are the <strong> right place</strong>.<p> Nope, this is not a powerpoint presentation</p></q>
     </div>
 
@@ -227,7 +227,7 @@
         down (4 times) to make it back to its correct size.
         
     -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4"     data-autoplay="60">
         <span class="try">Meet your friendly neighbourhood web head<sup>*</sup></span>
         <h1>Karthik</h1>
         <span class="footnote"><sup>*</sup> no pun intended</span>
@@ -241,11 +241,11 @@
         element should be rotated by 90 degrees clockwise.
         
     -->
-    <div id="ing" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+    <div id="ing" class="step" data-x="0" data-y="3000" data-rotate="90" data-scale="5"     data-autoplay="60">
         <p>3+ years of engineering <b class="positioning">performant</b>, <b class="rotating">interactive</b> and <b class="scaling">scalable</b>applications on web.</p>
     </div>
 
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+    <div id="big" class="step" data-x="3500" data-y="2500" data-rotate="180" data-scale="6"     data-autoplay="60">
         <p>Bring <b>U</b>r <b>I</b>deas <span class="thoughts">to life</span></p>
     </div>
 
@@ -258,7 +258,7 @@
         positioned far away from us (by 3000px).
         
     -->
-    <div id="tiny" class="step" data-x="3000" data-y="1900" data-z="-3000" data-rotate="300" data-scale="1">
+    <div id="tiny" class="step" data-x="3000" data-y="2000" data-z="-3000" data-rotate="300" data-scale="1"    data-autoplay="60">
        <p> While I make sure everything at the <b>Back</b>-end runs smoothly.</p>
     </div>
 
@@ -286,32 +286,33 @@
         See src/plugins/rel/README.md for more information.
         
     -->
-    <div id="its" class="step" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="6">
+    <div id="its" class="step" data-x="3300" data-y="-2050" data-z="0" data-rotate="90" data-scale="6"    data-autoplay="60">
         <p> I enable individuals, business to connect with the world in new and innovative ways via websites that are accessible, user-friendly, and performant, <strong>improving the online experience for everyone</strong>.</p>
     
     </div>
 
     <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>A few <b>Career</b><b class="imagination"> highlights</b></p>
-        <p id="exp">Journey so far : SWE -> Grad assistant -> Web Engineer -> CV Developer -> Loading...
+        <p><b class="imagination"> Journey</b> so far</p>
+        <p>And few highlights</p>
+        <p id="exp"><br>Software Engineer @CaratLane - 2018 to 2021 <br> Graduate Web Developer @NYU - 2022 <br> Web Engineer @Samsung Research - 2022<br> CV Developer @NYU - 2023<br> [Loading...]
     </div>
 
-    <div id="highlights" class="step high" data-x="7600" data-y="-1800" data-rotate="180" data-scale="6">
+    <div id="highlights" class="step high" data-x="6600" data-y="-4800" data-rotate="-90" data-scale="6"    data-autoplay="60">
         <p>@Samsung Research</p>
         <p>A multi-user, real-time, collaborative VR website which <b class="scaling">springboarded</b> R&D into immersive experiences on web.</p>
     </div>
 
-    <div id="highlights-2" class="step high" data-x="9600" data-y="-3800" data-rotate="180" data-scale="6">
+    <div id="highlights-2" class="step high" data-x="7000" data-y="-4800" data-rotate="-90" data-scale="6"    data-autoplay="60">
         <p>@CaratLane</p>
         <p><b class="rotating"> Hackathon to production </b> - Personalized shopping recommendation for customers while Bridging offline-online analytics gaining behavioral insights.</p>
     </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2500" data-rotate="20" data-scale="5">
+    <div id="source" class="step" data-x="7300" data-y="2500" data-rotate="0" data-scale="5"    data-autoplay="60">
         <p><b>And my Favorite project</b> : React-like frontend library supporting reconciliation, virtual dom, functional components and state management.</p>
-        <q><a href="https://github.com/ukarthik27/byor">Want the source ?</a>, Luke!</q>
+        <q><a target="_blank" href="https://github.com/ukarthik27/byor">Want the source ?</a>, Luke!</q>
     </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+    <div id="one-more-thing" class="step" data-x="7000" data-y="4000" data-scale="2"    data-autoplay="60">
         <a href="https://www.linkedin.com/in/karthikudhay">Click here to connect on LinkedIn</a>
         <p>one more thing...</p>
     </div>
@@ -328,11 +329,11 @@
         as `data-rotate` (these two are basically aliases).
         
     -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="5300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+    <div id="its-in-3d" class="step" data-x="7200" data-y="5300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2"    data-autoplay="60">
         <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <p class="int">My interest in > <a href="https://quizzical-hoover-1e5b4c.netlify.app/">XR + web</a> </p>
-        <p class="int">My works in > <a href="https://www.github.com/ukarthik27">Computer Vision</a> </p>
-        <span class="footnote">If you have any idea which combines all Web + CV + XR - I'd love to hear !!</a> </span>
+        <p class="int">My interest in > <a target="_blank" href="https://karthikwxr.netlify.app/">XR + web</a> </p>
+        <p class="int">My works in > <a target="_blank" href="https://www.github.com/ukarthik27">Computer Vision</a> </p>
+        <span class="footnote">If you have any idea which combines all Web + CV + XR - I'd love to hear via LinkedIn (or) ukarthik27@gmail.com  </span>
         
 
     </div>
@@ -352,7 +353,7 @@
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
         
     -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10"    data-autoplay="60">
     </div>
 
 </div>
@@ -389,8 +390,7 @@
     
 -->
 <div class="hint">
-    <p>Use a spacebar or arrow keys to navigate. <br/>
-       Press 'P' to launch speaker console.</p>
+    <p>Use a spacebar or arrow keys or swipe to navigate. <br/>
 </div>
 <script>
 if ("ontouchstart" in document.documentElement) { 
@@ -445,7 +445,6 @@ if ("ontouchstart" in document.documentElement) {
 </html>
 
 <!--
-    
     Now you know more or less everything you need to build your first impress.js presentation, but before
     you start...
     
